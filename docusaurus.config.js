@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'react-go', // Usually your GitHub org/user name.
-  projectName: 'website', // Usually your repo name.
+  projectName: 'react-go.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'React Go',
