@@ -1,10 +1,10 @@
 ---
 id: folder-structure
-title: 文件夹结构
-sidebar_label: 文件夹结构
+title: 目录结构
+sidebar_label: 目录结构
 ---
 
-`@react-go/scripts` 对项目的文件夹结构有一定的要求：
+`@react-go/scripts` 对项目的目录结构有一定的要求：
 
 ```
 my-app

@@ -1,5 +1,6 @@
 module.exports = {
   someSidebar: {
-    '快速开始': ['getting-started', 'folder-structure', 'available-scripts'],
+    '介绍': ['getting-started', 'folder-structure', 'available-scripts'],
+    '配置': ['build-in-configuration', 'configuration']
   },
 };
