@@ -55,6 +55,9 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} React Go. Built with Docusaurus.`,
     },
+    googleAnalytics: {
+      trackingID: 'UA-74390371-4'
+    }
   },
   presets: [
     [
