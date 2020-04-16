@@ -18,8 +18,8 @@ jobs:
         node-version: '12.x'
     - name: Configure git
       run: |
-        git config user.name "pengtikui"
-        git config user.email "949828390@qq.com"
+        git config --global user.name "pengtikui"
+        git config --global user.email "949828390@qq.com"
     - name: Install dependencies
       run: npm install
     - name: Deploy website
