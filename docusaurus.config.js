@@ -66,7 +66,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/react-go/react-go.github.io/blob/website',
+            'https://github.com/react-go/react-go.github.io/edit/website',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
