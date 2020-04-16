@@ -19,7 +19,9 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Deploy website
-      run: npm run deploy
+      run: |
+        echo "machine github.com login pengtikui password ${{ secrets.ACCESS_TOKEN }}"
+        npm run deploy
       env:
         GIT_USER: pengtikui
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
