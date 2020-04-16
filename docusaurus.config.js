@@ -3,7 +3,7 @@ module.exports = {
   tagline: '快速启动你的 React 项目',
   url: 'https://react-go.github.io',
   baseUrl: '/',
-  favicon: 'img/favicon.png',
+  favicon: 'favicon.png',
   organizationName: 'react-go', // Usually your GitHub org/user name.
   projectName: 'react-go.github.io', // Usually your repo name.
   themeConfig: {
@@ -11,7 +11,7 @@ module.exports = {
       title: 'React Go',
       logo: {
         alt: 'React Go Logo',
-        src: 'img/logo.png',
+        src: 'statics/logo.png',
       },
       links: [
         {
