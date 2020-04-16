@@ -20,8 +20,8 @@ jobs:
       run: npm install
     - name: Deploy website
       run: |
-        export "machine github.com login pengtikui password ${{ secrets.ACCESS_TOKEN }}"
         npm run deploy
       env:
         GIT_USER: pengtikui
+        USE_SSH: true
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
