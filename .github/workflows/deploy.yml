@@ -26,8 +26,7 @@ jobs:
         ref: 'master'
     - name: Commit files
       run: |
-        rm -rf *.(html|css|js|xml|txt)
-        rm -rf docs img statics
+        rm -rf *.html *.css *.js *.xml *.txt docs img statics
         git add .
         git commit -m "Deploy website version based on ${{ github.sha }}"
         git push
