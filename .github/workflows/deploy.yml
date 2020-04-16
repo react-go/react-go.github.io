@@ -1,0 +1,29 @@
+name: Deploy
+
+on:
+  push:
+    branches: [website]
+  pull_request:
+    branches: [website]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: Configure git
+      run: |
+        git config user.name "pengtikui"
+        git config user.email "949828390@qq.com"
+    - name: Install dependencies
+      run: npm install
+    - name: Deploy website
+      run: npm run deploy
+      env:
+        GIT_USER: pengtikui
+        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
