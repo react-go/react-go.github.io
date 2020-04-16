@@ -39,7 +39,7 @@ module.exports = {
             },
             {
               label: '配置参考',
-              to: 'docs/getting-started',
+              to: 'docs/configuration',
             },
           ],
         },
@@ -66,7 +66,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/react-go/website/',
+            'https://github.com/react-go/react-go.github.io/blob/website',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
