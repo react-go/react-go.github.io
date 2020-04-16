@@ -22,6 +22,7 @@ jobs:
       run: npm run build
     - name: Commit files
       run: |
+        git fetch
         git checkout master
         rm -rf *.(html|css|js|xml|txt)
         rm -rf docs img statics
