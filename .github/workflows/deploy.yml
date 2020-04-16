@@ -27,6 +27,8 @@ jobs:
     - name: Commit files
       run: |
         rm -rf *.html *.css *.js *.xml *.txt docs img statics
+        git config user.name "pengtikui"
+        git config user.email "949828390@qq.com"
         git add .
         git commit -m "Deploy website version based on ${{ github.sha }}"
         git push
