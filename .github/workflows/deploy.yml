@@ -20,12 +20,11 @@ jobs:
       run: npm install
     - name: Build static files
       run: npm run build
-    - name: Checkout master branch
-      uses: actions/checkout@v2
-      with:
-        ref: 'master'
     - name: Commit files
       run: |
+        git reset --hard
+        git fetch
+        git checkout master
         rm -rf *.html *.css *.js *.xml *.txt *.json docs img statics
         git config user.name "pengtikui"
         git config user.email "949828390@qq.com"
