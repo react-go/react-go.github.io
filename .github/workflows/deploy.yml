@@ -18,10 +18,15 @@ jobs:
         node-version: '12.x'
     - name: Install dependencies
       run: npm install
-    - name: Deploy website
+    - name: Build static files
+      run: npm run build
+    - name: Commit files
       run: |
-        npm run deploy
+        git checkout master
+        rm -rf *.(html|css|js|xml|txt)
+        rm -rf docs img statics
+        git add .
+        git commit -m "Deploy website version based on ${{ github.sha }}"
+        git push
       env:
-        GIT_USER: pengtikui
-        USE_SSH: true
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
