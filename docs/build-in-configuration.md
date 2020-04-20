@@ -18,6 +18,19 @@ sidebar_label: 内建配置
 
 默认仅编译 `./src` 目录下的 JavaScript 文件，Babel 配置使用 `@babel/preset-env` 和 `@babel/preset-react`，并使用 `@babel/plugin-proposal-class-properties` 插件以支持新的类属性语法。
 
+## ESLint
+
+内置 [@react-go/eslint-config](https://github.com/react-go/eslint-config)，本地开发和编译时均有效，无需单独安装，不支持自定义。你可以在 `package.json` 中添加如下配置，使编辑器能够读取到此配置：
+
+```json
+"eslintConfig": {
+  "extends": "@react-go/eslint-config"
+}
+```
+
+`@react-go/eslint-config` 仅包含一些能帮你避免一些 Bug 的 ESLint 规则，代码样式（是否加分号等）的格式化建议使用 [Prettier](https://prettier.io) 完成。
+
+
 ## CSS
 
 默认支持 `.css`、`.scss`、`.sass` 文件，同时支持 CSS Modules，并且 `./src` 下的样式文件会经过 PostCSS 处理，PostCSS 配置了 `postcss-flexbugs-fixes` 和 `postcss-preset-env`，支持 Stage 3+ 的 CSS 语法。
