@@ -10,10 +10,19 @@ sidebar_label: 可用命令
 
 `react-go start`
 
-启动一个本地开发服务
+启动一个本地开发服务。
+
+Options:
+
+* `-e --app-env [env]` 设置 `process.env.APP_ENV` 变量，默认为 `development`
 
 ## build
 
 `react-go build`
 
-构建项目
+构建项目。
+
+Options:
+
+* `-e --app-env [env]` 设置 `process.env.APP_ENV` 变量，默认为 `development`
+* `--analyze` 可视化地展示打包输出文件的大小
